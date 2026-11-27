@@ -14,7 +14,14 @@ export const metadata: Metadata = {
   description:
     "VYBE is the private network for entrepreneurs. An iOS app. Request early access.",
   applicationName: "VYBE",
-  icons: { icon: "/favicon.png", apple: "/favicon.png" },
+  icons: {
+    // Transparent logo: black on light browser tabs, white on dark ones.
+    icon: [
+      { url: "/icon-light.png", type: "image/png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark.png", type: "image/png", media: "(prefers-color-scheme: dark)" },
+    ],
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "VYBE — Where ambition connects",
     description: "The private network for entrepreneurs. iOS only. Request early access.",
