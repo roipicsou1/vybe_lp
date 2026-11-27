@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-const display = Montserrat({
+const display = Geist({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
   variable: "--font-display",
   display: "swap",
 });
